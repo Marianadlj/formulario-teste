@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    
+    <title>Cadastro de Voluntários</title>
+
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Cadastro de Voluntários 2021</h1>
+        <p id="subtitulo">Complete com suas informações</p>
+        <br>
+    </div>
+
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="atuação"><strong>Qual sua área de interesse para atuação?</strong></label>
+            <label>
+                <input type="radio" name="petlover" value="petcare">Abrigos de animais
+            </label>
+            
+            <label>
+                <input type="radio" name="vovolover" value="idososcare">Lares de idosos
+            </label>
+
+            <label>
+                <input type="radio" name="kidlover" value="kidscare">Orfanatos
+            </label>
+            
+        </div>
+
+        <div class="campo">
+            <label for="turno"><strong>Turno</strong></label>
+            <select id="turno">
+                <option selected disabled value="">Selecione</option>
+                <option>Matutino</option>
+                <option>Vespertino</option>
+                <option>Noturno</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione sua atual ocupação</strong></label>
+                <input type="checkbox" id="ocupação1" name="ocupação1" value="Desempregado(a)">
+                <label for="ocupação1">Desempregado(a)</label>
+                <input type="checkbox" id="ocupação2" name="ocupação2" value="Autonomo(a)">
+                <label for="ocupação2">Autônomo(a)</label>
+                <input type="checkbox" id="ocupação3" name="ocupação3" value="Horista">
+                <label for="ocupação3">Horista</label>
+                <input type="checkbox" id="ocupação4" name="ocupação4" value="Estudante">
+                <label for="ocupação4">Estudante</label>
+                <input type="checkbox" id="ocupação5" name="ocupação5" value="Outro">
+                <label for="ocupação5">Outro</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="sobre"><strong>Fale um pouco sobre você:</strong></label>
+            <textarea row="6" style="width: 26em;" id="sobre" name="sobre"></textarea required>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+
+    </form>
+
+</body>
+</html>
